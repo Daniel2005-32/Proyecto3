@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle deslizante</title>
+    <link rel="stylesheet" href="proyecto3.css">
+    <script src="proyecto3.js"></script>
+</head>
+<body>
+    <h1>Bienvenido al Puzzle del buceo</h1>
+    <table>
+        <tr>
+            <td id="parte1"><img src="row-1-column1.jpg"></td>
+            <td id="parte2"><img src="row-1-column2.jpg"></td>
+            <td id="parte3"><img src="row-1-column3.jpg"></td>
+        </tr>
+        <tr>
+            <td id="parte4"><img src="row-2-column1.jpg"></td>
+            <td id="parte5"><img src="row-2-column2.jpg"></td>
+            <td id="parte6"><img src="row-2-column3.jpg"></td>
+        </tr>
+        <tr>
+            <td id="parte7"><img src="row-3-column1.jpg"></td>
+            <td id="parte8"><img src="row-3-column2.jpg"></td>
+            <td id="parte9"></td>
+        </tr>
+    </table>
+    <br>
+    <label for="nombre-jugador"></label>
+    <input type="text" id="nombre-jugador" placeholder="Tu nombre">
+    <br>
+    <button onclick="inicioJuego()">Iniciar juego</button><br>
+    <br><button onclick="guardarPartida()">Guardar partida</button><br>
+    <br><button onclick="cargarPartida()">Cargar partida</button>
+
+    <p id="mensaje"></p>
+    <p id="contador-mov">Movimientos: 0</p>
+    <p id="contador-tiempo">Tiempo: 0 s</p>
+
+    <div id="ranking"></div>
+</body>
+</html>
